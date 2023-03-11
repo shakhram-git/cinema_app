@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomChipDateStyle"
+    android:textAppearance="@style/CustomChipDateStyle"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:textSize="16sp"
+    app:chipCornerRadius="56dp"
+    android:paddingVertical="8dp"
+    app:ensureMinTouchTargetSize="false"
+    tools:text="2010" />

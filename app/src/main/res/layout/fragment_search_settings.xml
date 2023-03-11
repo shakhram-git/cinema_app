@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.search_settings_fragments.SearchSettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/search_settings"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="26dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/to_show"
+            android:textColor="@color/mid_grey"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/types_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="26dp"
+            android:layout_marginVertical="16dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_divider"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <FrameLayout
+                android:id="@+id/country_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingHorizontal="26dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginVertical="16dp"
+                    android:text="@string/country"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/country_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text=""
+                    android:textColor="@color/mid_grey"
+                    android:textSize="14sp"
+                    tools:text="Россия" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/genre_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingHorizontal="26dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginVertical="16dp"
+                    android:text="@string/genre"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/genre_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text=""
+                    android:textColor="@color/mid_grey"
+                    android:textSize="14sp"
+                    tools:text="Комедия" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/year_period_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingHorizontal="26dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginVertical="16dp"
+                    android:text="@string/year"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/year_from_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text=""
+                    android:textColor="@color/mid_grey"
+                    android:textSize="14sp"
+                    tools:text="с 1998 до 2017" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="26dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginVertical="16dp"
+                        android:text="@string/rating"
+                        android:textColor="@color/dark_grey"
+
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rating_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:textColor="@color/mid_grey"
+                        android:textSize="14sp"
+                        tools:text="любой" />
+                </FrameLayout>
+
+                <com.google.android.material.slider.RangeSlider
+                    android:id="@+id/rating_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="26dp"
+
+                    android:stepSize="1"
+                    android:valueFrom="1"
+                    android:valueTo="10"
+                    app:labelBehavior="gone"
+                    app:thumbColor="@color/white"
+                    app:thumbStrokeColor="@color/black"
+                    app:thumbStrokeWidth="1dp"
+                    app:tickVisible="false"
+                    app:trackColorActive="@color/light_blue"
+                    app:trackColorInactive="@color/mid_grey" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="37dp"
+                        android:layout_marginBottom="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/mid_grey"
+                            android:textSize="14sp"
+                            android:layout_gravity="start"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="@color/mid_grey"
+                            android:textSize="14sp"
+                            android:layout_gravity="end"/>
+                    </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="26dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/to_sort"
+                    android:textColor="@color/mid_grey"
+                    android:textSize="12sp" />
+
+                <RadioGroup
+                    android:id="@+id/order_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="26dp"
+                    android:layout_marginVertical="16dp"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/is_showed_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingHorizontal="26dp"
+                android:paddingVertical="16dp">
+
+                <ImageView
+                    android:id="@+id/is_hiding_img"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="32dp"
+                    app:srcCompat="@drawable/icon_eye_crossed" />
+
+                <TextView
+                    android:id="@+id/is_hiding_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    tools:text="Скрывать просмотренное" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/apply_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="32dp"
+            android:background="@drawable/background_button"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp"
+            android:text="@string/apply"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

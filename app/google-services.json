@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "450405637393",
+    "project_id": "skillcinema-fedb8",
+    "storage_bucket": "skillcinema-fedb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450405637393:android:d80956a3087d7fd27200b0",
+        "android_client_info": {
+          "package_name": "com.example.skillcinema"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450405637393-73jlhmh6fs2u2u8osvpv6rd81krajsj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo2iCgiiCjn7Ghrot9MsSfKlTicdQZLOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450405637393-73jlhmh6fs2u2u8osvpv6rd81krajsj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

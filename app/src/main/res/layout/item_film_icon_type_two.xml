@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="96dp"
+        android:layout_height="132dp"
+        android:background="@color/background"
+        app:cardCornerRadius="4dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@color/background" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/poster_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/gradient_mask_watched_film" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/watched_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="6dp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/icon_eye" />
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="7.8"
+            android:textColor="@color/dark_grey"
+            android:textSize="6sp"
+            android:paddingHorizontal="4dp"
+            android:paddingVertical="1dp"
+            android:background="@drawable/background_film_rating"
+            android:backgroundTint="@color/white"
+            android:layout_margin="6dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/download_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:tint="@color/light_blue"
+            app:srcCompat="@drawable/icon_download" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:textColor="@color/dark_grey"
+            tools:text="Топи"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/year_and_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="2021, триллер"
+            android:textColor="@color/mid_grey"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

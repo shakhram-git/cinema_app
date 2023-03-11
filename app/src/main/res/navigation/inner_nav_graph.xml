@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inner_nav_graph">
+
+    <action
+        android:id="@+id/action_to_filmInfoFragment"
+        app:destination="@id/filmInfoFragment"
+        app:popUpToSaveState="true"
+        app:restoreState="true" />
+    <action
+        android:id="@+id/action_to_listFragment"
+        app:destination="@id/listFragment" />
+    <action
+        android:id="@+id/action_to_fullScreenGalleryDialogFragment"
+        app:destination="@id/fullScreenGalleryDialogFragment" />
+    <action
+        android:id="@+id/action_to_collectionsDialogFragment"
+        app:destination="@id/collectionsDialogFragment" />
+    <action
+        android:id="@+id/action_to_newCollectionDialogFragment"
+        app:destination="@id/newCollectionDialogFragment" />
+
+    <fragment
+        android:id="@+id/filmInfoFragment"
+        android:name="com.example.skillcinema.presentation.film_info_fragment.FilmInfoFragment"
+        android:label="fragment_film_info"
+        tools:layout="@layout/fragment_film_info">
+        <action
+            android:id="@+id/action_filmInfoFragment_to_actorInfoFragment"
+            app:destination="@id/actorInfoFragment" />
+        <action
+            android:id="@+id/action_filmInfoFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_filmInfoFragment_to_seasonsFragment"
+            app:destination="@id/seasonsFragment" />
+        <argument
+            android:name="filmId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/actorInfoFragment"
+        android:name="com.example.skillcinema.presentation.actor_info_fragment.ActorInfoFragment"
+        android:label="fragment_actor_info"
+        tools:layout="@layout/fragment_actor_info">
+        <action
+            android:id="@+id/action_actorInfoFragment_to_filmographyFragment"
+            app:destination="@id/filmographyFragment" />
+        <argument
+            android:name="stuffId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.skillcinema.presentation.gallery_fragment.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery">
+        <argument
+            android:name="filmId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmographyFragment"
+        android:name="com.example.skillcinema.presentation.filmography_fragment.FilmographyFragment"
+        android:label="fragment_filmography"
+        tools:layout="@layout/fragment_filmography">
+        <argument
+            android:name="staffId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/seasonsFragment"
+        android:name="com.example.skillcinema.presentation.seasons_fragment.SeasonsFragment"
+        android:label="fragment_seasons"
+        tools:layout="@layout/fragment_seasons">
+        <argument
+            android:name="filmId"
+            app:argType="long" />
+        <argument
+            android:name="filmName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.skillcinema.presentation.list_fragment.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list">
+        <argument
+            android:name="listType"
+            app:argType="com.example.skillcinema.domain.model.ListType" />
+        <action
+            android:id="@+id/action_listFragment_to_actorInfoFragment"
+            app:destination="@id/actorInfoFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/fullScreenGalleryDialogFragment"
+        android:name="com.example.skillcinema.presentation.full_screen_gallery_fragment.FullScreenGalleryDialogFragment"
+        android:label="fragment_full_screen_gallery"
+        tools:layout="@layout/fragment_full_screen_gallery">
+        <argument
+            android:name="startItemPosition"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="filmPhotosList"
+            app:argType="com.example.skillcinema.domain.model.FilmPhoto[]" />
+    </dialog>
+    <dialog
+        android:id="@+id/collectionsDialogFragment"
+        android:name="com.example.skillcinema.presentation.collections_dialog_fragment.CollectionsDialogFragment"
+        android:label="fragment_collections_dialog"
+        tools:layout="@layout/fragment_collections_dialog">
+        <argument
+            android:name="film"
+            app:argType="com.example.skillcinema.domain.model.Film" />
+    </dialog>
+    <dialog
+        android:id="@+id/newCollectionDialogFragment"
+        android:name="com.example.skillcinema.presentation.new_collection_fragment.NewCollectionDialogFragment"
+        android:label="fragment_new_collection_dialog"
+        tools:layout="@layout/fragment_new_collection_dialog" >
+        <argument
+            android:name="film"
+            app:argType="com.example.skillcinema.domain.model.Film"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </dialog>
+
+</navigation>

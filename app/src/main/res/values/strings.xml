@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name" translatable="false">SkillCinema</string>
+    <string name="skip">Пропустить</string>
+    <string name="onboarding_1">Узнавай\nо премьерах</string>
+    <string name="onboarding_2">Создавай\nколлекции</string>
+    <string name="onboarding_3">Делись\nс друзьями</string>
+    <string name="all">Все</string>
+    <string name="premieres">Премьеры</string>
+    <string name="popular">Популярные</string>
+    <string name="top_250">Топ-250</string>
+    <string name="series">Сериалы</string>
+    <string name="show_all">Показать все</string>
+    <string name="error">Ошибка!</string>
+    <string name="error_message">Во время обработки запроса\nпроизошла ошибка</string>
+    <string name="seasons_episodes">Сезоны и серии</string>
+    <string name="seasons_and_episodes_amount">%1$s %2$s</string>
+    <string name="episode_number_and_name">%1$s. %2$s</string>
+    <string name="the_film_starred">В фильме снимались</string>
+    <string name="worked_on_the_film">Над фильмом работали</string>
+    <string name="gallery">Галерея</string>
+    <string name="similar_films">Похожие фильмы</string>
+    <string name="best_films">Лучшее</string>
+    <string name="filmography">Фильмография</string>
+    <string name="to_the_list">К списку</string>
+
+    <string name="actor">Актер</string>
+    <string name="actress">Актриса</string>
+    <string name="actor_playing_himself">Актер: играет самого себя</string>
+    <string name="actress_playing_herself">Актриса: играет саму себя</string>
+    <string name="actor_in_credits">Указан в титрах</string>
+    <string name="actress_in_credits">Указана в титрах</string>
+    <string name="director">Режиссер</string>
+    <string name="producer">Продюссер</string>
+    <string name="writer">Сценарист</string>
+    <string name="operator">Оператор</string>
+    <string name="composer">Композитор</string>
+
+    <string name="stills">Кадры</string>
+    <string name="shooting_photos">Изображения со съемок</string>
+    <string name="posters">Постеры</string>
+    <string name="fan_arts">Фан-арты</string>
+    <string name="promo">Промо</string>
+    <string name="concepts">Концепт-арты</string>
+    <string name="wallpapers">Обои</string>
+    <string name="covers">Обложки</string>
+    <string name="screenshots">Скриншоты</string>
+
+    <string name="episode_number">%1$d серия</string>
+    <string name="season_number">%1$d сезон</string>
+
+    <plurals name="seasons_count">
+        <item quantity="zero">%1$d сезонов</item>
+        <item quantity="one">%1$d сезон</item>
+        <item quantity="two">%1$d сезона</item>
+        <item quantity="few">%1$d сезона</item>
+        <item quantity="many">%1$d сезонов</item>
+        <item quantity="other">%1$d сезонов</item>
+    </plurals>
+    <plurals name="episodes_count">
+        <item quantity="zero">%1$d серий</item>
+        <item quantity="one">%1$d серия</item>
+        <item quantity="two">%1$d серии</item>
+        <item quantity="few">%1$d серии</item>
+        <item quantity="many">%1$d серий</item>
+        <item quantity="other">%1$d серий</item>
+    </plurals>
+    <plurals name="films_count">
+        <item quantity="zero">%1$d фильмов</item>
+        <item quantity="one">%1$d фильм</item>
+        <item quantity="two">%1$d фильма</item>
+        <item quantity="few">%1$d фильма</item>
+        <item quantity="many">%1$d фильмов</item>
+        <item quantity="other">%1$d фильмов</item>
+    </plurals>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="season">Сезон</string>
+    <string name="search_bar_hint">Фильмы, актеры, режиссеры</string>
+    <string name="search_failed_message">К сожалению, по вашему запросу\n ничего не найдено</string>
+    <string name="to_show">Показывать</string>
+    <string name="country">Страна</string>
+    <string name="year">Год</string>
+    <string name="genre">Жанр</string>
+    <string name="films">Фильмы</string>
+    <string name="search_settings">Настройки поиска</string>
+    <string name="any">любой</string>
+    <string name="number_from">c %1$d</string>
+    <string name="number_till">до %1$d</string>
+    <string name="rating">Рейтинг</string>
+    <string name="to_sort">Сортировать</string>
+    <string name="popularity">Популярность</string>
+    <string name="date">Дата</string>
+    <string name="hide_watched">Скрывать просмотренное</string>
+    <string name="dont_hide_watched">Не скрывать просмотренное</string>
+    <string name="apply">Применить</string>
+    <string name="enter_country">Введите страну</string>
+    <string name="enter_genre">Введите жанр</string>
+    <string name="search_period_from">Искать в период с</string>
+    <string name="period">Период</string>
+    <string name="search_period_to">Искать в период до</string>
+    <string name="choose">Выбрать</string>
+    <string name="add_to_collection">Добавить в коллекцию</string>
+    <string name="create_new_collection">Создать свою коллекцию</string>
+    <string name="collections">Коллекции</string>
+    <string name="ready">Готово</string>
+    <string name="new_collection_name_hint">Придумайте название \nдля вашей новой коллекции</string>
+    <string name="clear_history">Очистить\n историю</string>
+    <string name="try_again">Попробовать\nеще раз</string>
+
+</resources>
